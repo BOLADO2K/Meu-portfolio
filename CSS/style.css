@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-image: url(https://mfiles.alphacoders.com/842/842969.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+/* RADIO */
+
+
+
+/* RADIO */
+
+
+/* BARRA DE NAVEGAÇÃO */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-right: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+
+#play-button {
+  background-color: lightblue;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* BARRA DE NAVEGAÇÃO */
+
+
+
+/* SOBRE MIM */
+
+.welcome-section {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.welcome-section h1 {
+  color: white;
+  font-size: 36px;
+  text-shadow: 1px 1px 2px black;
+  margin: 0;
+}
+
+.welcome-section p {
+  color: white;
+  font-size: 18px;
+  text-shadow: 1px 1px 2px black;
+  margin: 0;
+  max-width: 500px;
+}
+
+.welcome-section .profile-picture {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+/* SOBRE MIM */
+
+
+
+
+/* GALERIA DE PROJETOS */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project {
+  color: rgba(255, 255, 255, 0.616);
+  width: 300px;
+  margin: 20px;
+  text-align: left;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+
+.h2color {
+  color: white;
+}
+/* GALERIA DE PROJETOS */
+
+
+/* RODAPÉ */
+footer {
+  background-color: transparent;
+  color: #fff;
+  padding: 50px;
+  text-align: center;
+}
+
+#contact {
+  animation: slideIn 0.5s ease-out forwards;
+}
+
+#social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#social-icons a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 20px;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+/* RODAPÉ */
