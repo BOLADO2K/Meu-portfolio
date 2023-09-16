@@ -3,30 +3,48 @@
   padding: 0;
   box-sizing: content-box;
 }
+
+@import url('https://fonts.cdnfonts.com/css/share-tech-mono');
+@import url('https://fonts.cdnfonts.com/css/nasalization');
+@import url('https://fonts.cdnfonts.com/css/borgen');
+
 body {
-  font-family: Arial, sans-serif;
   text-align: center;
-  background-image: url(https://rare-gallery.com/uploads/posts/4508132-landscape-forest-deer-artwork-pine-trees-illustration-mountains-minimalism-animals-fire-watch.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100%;
 }
 
-/* RADIO */
-
-
-
-/* RADIO */
-
 
 /* BARRA DE NAVEGAÇÃO */
+.nav-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.bloco{
+  animation: slideIn 0.5s ease-out forwards;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00a2ff;
+  height: 200px;
+}
+
+.bloco h2 {
+  font-size: 35px;
+  color: white;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
 }
+
 
 ul {
   display: flex;
@@ -39,26 +57,36 @@ li {
   margin-right: 1rem;
 }
 
-a {
-  text-decoration: none;
-  color: white;
-}
-
-
-#play-button {
-  background-color: lightblue;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
+ul img {
   cursor: pointer;
+  width: 60px;
+
 }
 
-/* BARRA DE NAVEGAÇÃO */
+
+
+.nav-logo P:hover{
+  cursor: pointer;
+  color: #00a2ff;
+}
+.nav-logo P{
+  display: flex;
+  font-family: 'Nasalization Rg', sans-serif;
+  width: 100px;                          
+  cursor: pointer;
+  margin: 20%;
+}
+
+.nav-logo2{
+  display: flex;
+  justify-content: flex-end;
+}
 
 
 
 /* SOBRE MIM */
-
 .welcome-section {
+  animation: slideIn 1.0s ease-out forwards;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -70,18 +98,42 @@ a {
 }
 
 .welcome-section h1 {
-  color: white;
-  font-size: 36px;
-  text-shadow: 1px 1px 2px black;
+  font-family: 'Nasalization Rg', sans-serif;
+  font-size: 50px;
   margin: 0;
 }
 
 .welcome-section p {
-  color: white;
-  font-size: 18px;
-  text-shadow: 1px 1px 2px black;
+  font-family: 'Borgen', sans-serif;
+                                                
+  font-size: 20px;
   margin: 0;
   max-width: 500px;
+}
+
+.habilidades img{
+  width: 50px;
+  border-radius: 50%;
+}
+
+.habilidades img:hover{
+  box-shadow: 0px 0px 10px;
+  color: #00a2ff;
+}
+
+
+
+.habilidades {
+  
+  cursor: pointer;
+  animation: slideIn 1.0s ease-out forwards;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: inline;
+  margin: 5px;
+  margin-bottom: 20px;
+  
 }
 
 .welcome-section .profile-picture {
@@ -89,21 +141,33 @@ a {
   width: 200px;
   height: 200px;
   margin-bottom: 20px;
+  
 }
-/* SOBRE MIM */
 
-
+.foto img{
+  box-shadow: 0 0 50;
+  color: #00a2ff;
+}
 
 
 /* GALERIA DE PROJETOS */
 .gallery {
+
+  background-image: url("");
+  
+  animation: slideIn 1.0s ease-out forwards;
+  margin-top: 100px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
+.gallery h2{
+  font-family: 'Borgen', sans-serif;
+                                                
+}
+
 .project {
-  color: rgba(255, 255, 255, 0.616);
   width: 300px;
   margin: 20px;
   text-align: left;
@@ -114,23 +178,34 @@ img {
   height: auto;
 }
 
+.project img {
+  box-shadow: 1px 1px 1px 1px;
+  color: #00a2ff;
+}
 
-.h2color {
+.project img:hover{
   color: white;
 }
-/* GALERIA DE PROJETOS */
 
 
 /* RODAPÉ */
 footer {
-  background-color: transparent;
-  color: #fff;
+  animation: slideIn 1.0s ease-out forwards;
   padding: 50px;
   text-align: center;
 }
 
+#perfil{
+  animation: slideIn 1.0s ease-out forwards;
+}
+
 #contact {
-  animation: slideIn 0.5s ease-out forwards;
+  animation: slideIn 1.0s ease-out forwards;
+}
+
+#contact h3{
+  font-size: 25px;
+  font-family: 'Borgen', sans-serif;                                          
 }
 
 #social-icons {
@@ -140,10 +215,38 @@ footer {
   margin-top: 20px;
 }
 
-#social-icons a {
+#social-icons a{
+  cursor: pointer;
+  font-family: 'Nasalization Rg', sans-serif;             
+  margin: 20px;
+  font-size: 13px;
+  margin: 5px;
+  box-shadow:  1px 1px 5px;
+  color: black;
+  border: 20px;
+}
+
+#social-icons a{
   text-decoration: none;
-  color: #fff;
-  margin: 0 20px;
+  color: black;
+}
+
+#social-icons a:hover {
+  color: #00a2ff;
+}
+
+.barra{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 30px;
+  background-color: #00a2ff;
+}
+
+.barra:hover{
+  color: white;
+  box-shadow: 0px 0px 10px;
 }
 
 @keyframes slideIn {
@@ -156,3 +259,27 @@ footer {
 }
 
 /* RODAPÉ */
+
+@media screen and (max-width: 768px) {
+  body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }  
+
+  .habilidades {
+    width: 100%;
+  }
+
+  .welcome-section{
+    height: 100vh;
+  }
+
+  .nav-logo p{
+    width: px;
+  }
+  .nav-logo2 img{
+    width: 50px
+  }
+};

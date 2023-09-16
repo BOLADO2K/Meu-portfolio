@@ -4,64 +4,82 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.cdnfonts.com/css/borgen" rel="stylesheet">
+                
+    <link href="https://fonts.cdnfonts.com/css/share-tech-mono" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/nasalization" rel="stylesheet">
+                
+                
+                
     <link rel="stylesheet" href="CSS/style.css" />
-    <link
-      rel="shortcut icon"
-      href="img/notebook_computer_laptop_icon_185946.ico"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="img/notebook_computer_laptop_icon_185946.ico" type="imagex-icon"/>
 
     <title>Caiam Fernandes</title>
   </head>
   <body>
+    <div id="app">
+      
     <!-- Barra de Navegação -->
-    <nav>
-      <div class="nav-logo">
-        <img src="img/notebook_computer_laptop_icon_185946.ico" alt="Logo" />
-      </div>
-      <ul>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
-      </ul> 
-    </nav>
+    <div class="nav-container">
 
-    <!-- Barra de Navegação -->
+      <div class="nav-logo">
+        <p onclick="padrao()">CAIAM FERNANDES</p>
+      </div>
+  
+      <nav class="nav-logo2">
+        <ul>
+          <img id="trocar" onclick="modoDark()" src="/img/1-removebg-preview.png" alt="" srcset="">
+        </ul>
+      </nav>
+    </div>
 
     <!-- Sobre Mim -->
     <div class="welcome-section">
-      <div>
-        <img src="img/perfil.jpg" class="profile-picture" />
-        <h1>Bem-vindo ao meu portfólio</h1>
+      <div id="foto">
+        <img id="1" src="img/perfil.jpg" class="profile-picture" />
+        <h1>Front-End Engineer</h1>
         <p>
           Este é o meu espaço na web para exibir meu trabalho e compartilhar
-          minhas realizações.
+          minhas realizações...
         </p>
         <br />
+        <div onclick="next()" class="habilidades">
+          <img src="/img/html.png.png" alt="" srcset="">
+        </div>
+    
+        <div onclick="next2()" class="habilidades">
+          <img src="/img/css.png.png" alt="" srcset="">
+        </div>
+    
+        <div onclick="next3()" class="habilidades">
+          <img src="/img/js.png.png" alt="" srcset="">
+        </div>
 
-        <!-- RADIO -->
-        
-
-        <!-- RADIO -->
       </div>
+  
     </div>
-    <!-- Sobre Mim -->
-    
-   
 
     
+
+
     <!-- projetos -->
-    <h2 class="h2color">Meus Projetos</h2>
+    
+    <div class="bloco">
+      <h2 class="h2color">マイ プロジェクト</h2>
+    </div>
+
+
     <div class="gallery">
       <div class="project">
         <a href="https://bolado2k.github.io/Radio-Sleep-Mode/" target="_blank">
-       <img src="https://wallpaperaccess.com/full/8088706.gif" alt="Projeto 1">
+       <img src="https://cutewallpaper.org/21/anime-gif-wallpapers/Animated-Anime-Gif-Images-Background-Wallpaper.gif" alt="Projeto 1">
        </a> 
         <h2>Radio-Sleep Mode</h2>
       </div>
       <div class="project">
         <img
           src="https://i.ytimg.com/vi/2hlAPgGpTdU/maxresdefault.jpg" alt="Projeto 2"/> 
-        <!--<h2> 3D CONCEPT</h2> -->
+        <!-- <h2> projeto</h2> -->
         
       </div>
       <div class="project">
@@ -97,32 +115,36 @@
         <p>Breve descrição do Projeto 3</p> -->
       </div>
     </div>
-    <!-- Projetos -->
-
-
-
-
 
     <!-- Siga-nos nas redes sociais -->
     <footer>
       <div id="contact">
-        <h3>Siga-me nas redes sociais</h3>
+        <h3>Siga-me nas Redes Sociais:</h3>
         <div id="social-icons">
-          <a href="#">
-            <i class="fab fa-facebook-square fa-3x"></i>
-          </a>
+          
           <a href="https://twitter.com/BOLADOIIK" target="_blank">
-            <i class="fab fa-twitter-square fa-3x">twitter</i>
+            <div class="barra">
+              <p>twitter</p>
+            </div>
           </a>
+          
           <a href="https://www.instagram.com/caiamfernandes/" target="_blank">
-            <i class="fab fa-instagram fa-3x">instagram</i>
+            <div class="barra">
+              <p>instagram</p>
+            </div>
           </a>
-          <a href="https://github.com/BOLADO2K">
-            <i class="fab fa-linkedin fa-3x">Github</i>
+          
+          <a href="https://github.com/BOLADO2K" target="_blank">
+            <div class="barra">
+              <p>Github</p>
+            </div>
           </a>
+          
         </div>
       </div>
     </footer>
-    <!-- Siga-nos nas redes sociais -->
+
+    <script src="app.js"></script>
+    </div>
   </body>
 </html>
